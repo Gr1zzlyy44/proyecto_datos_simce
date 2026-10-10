@@ -24,6 +24,8 @@
 
 ## 2026-10-08 — No versionar los datos
 
+**ADR-001** · Estado: Aceptada
+
 **Contexto:** Configurando el repo me di cuenta que si subia todos los datos utilizados en el proyecto se haria pesado y lento. Tambien se pensó que con el tiempo los datos irian cambiando por lo cual si algun usuario utilizara el script podria usar los datos acorde a su periodo
 
 **Decisión:** Se decidio no subir los datos usados en el proyecto
@@ -33,3 +35,32 @@
 **Alternativas consideradas:** Subir los datos tal cual. Git LFS sirve para guardar archivos pesados en Github, pero tiene limite gratis y complica a quien clona el repo. Subir una muestra chica que podria servir para mas adelante para pruebas.
 
 **Consecuencias:** El no versionar los datos produce un repo mas ligero pero tambien podria generar discrepancias en los resultados obtenidos por mi y por un usuario que utilice el script en otro momento. Las personas que quieran utilizar los scripts con los mismos datos deberan ir y descargarlos desde los sitios oficiales. Para evitar esto al descargar cada archivo se anotará su fecha, enlace y hash.
+
+## 2026-10-10 — Utilizar solo bases publicas
+
+**ADR-002** · Estado: Aceptada
+
+**Contexto:** Al buscar las bases de datos en la agencia de calidad de la educacion se encontraron bases de datos publicas y bases de datos con acceso restringido.
+
+**Decisión:** Se decidio trabajar con las bases de datos publicas
+
+**Razones:** Se escogio trabajar con las bases de datos publicas ya que estas traian la informacion por colegio, en cambio las bases de datos de acceso restringido contenian la informacion por alumno, lo que para el cometido del proyecto no era necesario trabajar con esa informacion tan especifica
+
+**Alternativas consideradas:** Se contemplo por un momento trabajar con las bases de datos por alumno pero se descartó por la cantidad inmesa de datos con la que se deberia trabajar y porque al ser datos mas especificos se vuelven mas delicados.
+
+**Consecuencias:** Al no tener los datos por alumnos solo se podrá ver el promedio por colegio
+
+## 2026-10-10 — Trabajar con 4º básico
+
+**ADR-003** · Estado: Aceptada
+
+**Contexto:** Al revisar el calendario de la agencia de calidad de la educacion se encontró que no todos los cursos se evaluaban todos los años y el que mas evaluaciones tenia era 4to basico 
+
+**Decisión:** Se decidio trabajar solo con las bases de datos de 4to basico
+
+**Razones:** Los cursos de 4to basico son actualmente los que mas evaluaciones tienen desde 2005 en adelante esto ayudaria a medir con mayor eficacia la consistencia de los resultados.
+
+**Alternativas consideradas:** Se contemplo trabajar con los datos de 2do medio para medir tanto la basica como la media pero las participaciones de los de estos cursos seguian siendo menores que las de los 4tos basicos
+
+**Consecuencias:** Al solo medir los datos de 4to basico los datos solo se lograria una medicion a nivel basica.
+Faltan datos de 4to medio entre 2019 a 2021.

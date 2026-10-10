@@ -21,3 +21,15 @@
 **Solución:** Para solucionar el problema tuve que desinstalar el ultimo postgres instalado y borrar la carpeta ya existente y reinstalar todo desde 0 sin datos antiguos
 
 **Aprendizaje:** Aprendi a que al momento de instalar o desinstalar un programa verificar que no queden datos pendientes de instalaciones o desinstalaciones anteriores
+
+## 2026-10-08 — No versionar los datos
+
+**Contexto:** Configurando el repo me di cuenta que si subia todos los datos utilizados en el proyecto se haria pesado y lento. Tambien se pensó que con el tiempo los datos irian cambiando por lo cual si algun usuario utilizara el script podria usar los datos acorde a su periodo
+
+**Decisión:** Se decidio no subir los datos usados en el proyecto
+
+**Razones:** Los datos pesas bastante y al subirlos al repositorio con el pasar del tiempo se volveria pesado y lento. Tambien cabe agregar que los datos son publivod (Cualquier los puede descargar de la fuente original) y los procesados se generan con los scripts
+
+**Alternativas consideradas:** Subir los datos tal cual. Git LFS sirve para guardar archivos pesados en Github, pero tiene limite gratis y complica a quien clona el repo. Subir una muestra chica que podria servir para mas adelante para pruebas.
+
+**Consecuencias:** El no versionar los datos produce un repo mas ligero pero tambien podria generar discrepancias en los resultados obtenidos por mi y por un usuario que utilice el script en otro momento. Las personas que quieran utilizar los scripts con los mismos datos deberan ir y descargarlos desde los sitios oficiales. Para evitar esto al descargar cada archivo se anotará su fecha, enlace y hash.

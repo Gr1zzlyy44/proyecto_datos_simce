@@ -8,7 +8,7 @@
 | **Centro de Estudios Mineduc** | Directorio de establecimientos educacionales | Lista oficial de colegios: comuna, coordenadas, tipos de enseñanza, matrícula, cobros y estado | 1992–2025 | .rar | 914 KB comprimido | Sí | Sí | [Enlace](https://datosabiertos.mineduc.cl/directorio-de-establecimientos-educacionales/) |
 | **Centro de Estudios Mineduc** | Asistencia anual por estudiante | En esta sección se encuentran los datos anuales de asistencia por alumno (con MRUN) y trae el grado (COD_GRADO) | 2015-2025 | .rar | 34.3MB Comprimido | Si | Si | [Enlace](https://datosabiertos.mineduc.cl/asistencia-anual-por-estudiante/) |
 | **Centro de Estudios Mineduc** | Cargos Docentes | Cada fila es un cargo (un profesor en un colegio). Trae título, tipo de título, especialización, años de servicio, año de titulación, duración de la carrera y modalidad de estudio | 2003–2026 | .rar | 8 MB comprimido | Si | Si | [Enlace](https://datosabiertos.mineduc.cl/cargos-docentes/) |
-
+| Centro de Estudios MINEDUC | Rendimiento por estudiante | Cada fila es un alumno (con MRUN). Trae si aprobó, reprobó o se retiró, y el grado (COD_GRADO) | 2002–2025 | .rar | 41,4 MB comprimido | Sí | Sí | [Enlace](https://datosabiertos.mineduc.cl/rendimiento-por-estudiante-2/) |
 
 
 
@@ -24,7 +24,7 @@
 | Tipo de título | Cargos Docentes | Saber si el profesor tiene título en educación o en otra área |
 | Modalidad de estudio | Cargos Docentes| Estudiar presencial o a distancia podría reflejar diferencias en la formación |
 | Matrícula total | Directorio | El tamaño del colegio podría influir en los resultados |
-
+| Aprobación / reprobación / retiro | Rendimiento | ¿Causa o resultado? Revisar antes de usar en el modelo |
 
 ## Observaciones de calidad de datos
 
@@ -37,4 +37,6 @@ Los archivos de asistencia son tan grandes que excel los corta en 1.048.576 fila
 En cargos docentes un mismo profesor puede tener varios cargos y aparecer en varias filas. Hay que tenerlo en cuenta al contar profesores por colegio.
 
 Cargos Docentes no trae la institución donde estudió el profesor.
+
+Rendimiento viene por alumno (igual que asistencia). Para usarlo hay que filtrar 4º básico y resumirlo por colegio.
 

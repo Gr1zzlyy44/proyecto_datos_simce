@@ -64,3 +64,17 @@
 
 **Consecuencias:** Al solo medir los datos de 4to basico los datos solo se lograria una medicion a nivel basica.
 Faltan datos de 4to medio entre 2019 a 2021.
+
+## 2026-10-22 — Usar los años 2010–2018 y 2022–2023, sin asistencia en el análisis principal
+
+**ADR-004** · Estado: Aceptada
+
+**Contexto:** Al revisar el inventario de fuentes se encontró que no todas cubren los mismos años. El SIMCE de 4º básico no tiene datos entre 2019 y 2021. El IVE de la JUNAEB termina en 2023 y la asistencia anual por estudiante recién empieza en 2015. Para cruzar las fuentes por RBD se necesitan años en los que todas tengan datos.
+
+**Decisión:** Se usarán los años 2010–2018 y 2022–2023 (11 años) para el análisis principal, sin incluir la asistencia.
+
+**Razones:** Una de las preguntas del proyecto es si los buenos resultados de un colegio son consistentes en el tiempo, y para eso se necesitan muchos años de datos. Incluir la asistencia reduciría el periodo a solo 6 años, con un hueco en medio. Además, más años entregan más datos para entrenar el modelo.
+
+**Alternativas consideradas:** Usar solo los años 2015–2018 y 2022–2023 (6 años) incluyendo la asistencia. Se descartó como análisis principal porque deja muy pocos años para medir la consistencia.
+
+**Consecuencias:** La asistencia no será parte del análisis principal. Como posible extensión, se puede hacer un análisis secundario con los años 2015 en adelante para revisar si la asistencia aporta algo. El año 2024 queda fuera porque no hay IVE para ese año y porque su base SIMCE todavía es preliminar.

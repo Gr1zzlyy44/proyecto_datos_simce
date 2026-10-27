@@ -4,7 +4,7 @@
 | Fuente | Base | Contenido | Años | Formato | Peso | Documentación | ¿Tiene RBD? | Enlace |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
 | **JUNAEB** | Prioridades con IVE-SINAE | % de vulnerabilidad por colegio | 2010-2023 | .xls | 2,412KB | No encontrada | Sí | [Enlace](https://www.junaeb.cl/ive/) |
-| **Agencia de Calidad de la Educación** | SIMCE 4º básico por establecimiento | Puntaje promedio por colegio en Lectura y Matemática, grupo socioeconómico (cod_grupo) y diferencia con el mismo grupo (difgru) | 1999, 2002, 2005–2018, 2022–2024 | .rar | ~5 MB por año | Diccionario de variables (glosas) + Metodología GSE 2012 | Si | [Enlace](https://informacionestadistica.agenciaeducacion.cl/#/bases) |
+| **Agencia de Calidad de la Educación** | SIMCE 4º básico por establecimiento | Puntaje promedio por colegio en Lectura y Matemática, grupo socioeconómico (cod_grupo) y diferencia con el mismo grupo (difgru) | 1988, 2002, 2005–2018, 2022–2024 | .rar | ~5 MB por año | Diccionario de variables (glosas) + Metodología GSE 2012 | Si | [Enlace](https://informacionestadistica.agenciaeducacion.cl/#/bases) |
 | **Centro de Estudios Mineduc** | Directorio de establecimientos educacionales | Lista oficial de colegios: comuna, coordenadas, tipos de enseñanza, matrícula, cobros y estado | 1992–2025 | .rar | 914 KB comprimido | Sí | Sí | [Enlace](https://datosabiertos.mineduc.cl/directorio-de-establecimientos-educacionales/) |
 | **Centro de Estudios Mineduc** | Asistencia anual por estudiante | En esta sección se encuentran los datos anuales de asistencia por alumno (con MRUN) y trae el grado (COD_GRADO) | 2015-2025 | .rar | 34.3MB Comprimido | Si | Si | [Enlace](https://datosabiertos.mineduc.cl/asistencia-anual-por-estudiante/) |
 | **Centro de Estudios Mineduc** | Cargos Docentes | Cada fila es un cargo (un profesor en un colegio). Trae título, tipo de título, especialización, años de servicio, año de titulación, duración de la carrera y modalidad de estudio | 2003–2026 | .rar | 8 MB comprimido | Si | Si | [Enlace](https://datosabiertos.mineduc.cl/cargos-docentes/) |
@@ -40,3 +40,4 @@ Cargos Docentes no trae la institución donde estudió el profesor.
 
 Rendimiento viene por alumno (igual que asistencia). Para usarlo hay que filtrar 4º básico y resumirlo por colegio.
 
+Los diccionarios del SIMCE no usan nombres consistentes: la hoja de establecimientos se llama _rbd en la mayoría de los años y rbd en 2017 y 2018.
